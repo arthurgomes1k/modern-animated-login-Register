@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(backgorund-mountains.png) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(227, 227, 227, 0.154);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(208, 208, 208, 0.456);
+    width: 768px;
+    min-height: 480px;
+    overflow: hidden;
+}
+
+.container p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container h1 {
+    color: black;
+}
+
+.container button {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container button:hover {
+    background-color: black;
+    color: white;
+}
+
+.container form {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input {
+    background-color: white;
+    border: none;
+    margin: 8px;
+    padding: 10px 15px;
+    font-size: 12.99px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 230px 0 0 230px;
+    z-index: 1000;
+    transition: all 0.6s ease-in-out;
+}
+
+.login {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+.register {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.form-container form a {
+    color: black;
+    font-size: 16px;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    width: 45px;
+    height: 45px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.social-icons i {
+    font-size: 26px;
+}
+
+.toggle-container h2 {
+    font-size: 32px;
+}
+
+.toggle {
+    height: 100%;
+    background: white;
+    color: black;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container button.hidden{
+    background-color: white;
+    border: 2px solid black;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.container button.hidden:hover {
+    background-color: black;
+    color: white;
+}
+
+.container.active .right {
+    transform: translateX(200%);
+}
+
+.container.active .toggle-container {
+    transform: translateX(-100%);
+    border-radius: 0 230px 230px 0;
+}
+
+.container.active .toggle {
+    transform: translateX(50%);
+}
+
+.container.active .login {
+    display: none;
+}
+
+.container.active .login {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+.left {
+    transform: translateX(-200%);
+}
+
+.container.container .left {
+    transform: translateX(0);
+}
