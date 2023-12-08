@@ -3,21 +3,18 @@
 ## Descrição ##
 Este projeto consiste em uma tela moderna de login e registro animada, desenvolvida com HTML, CSS e JavaScript. A interface é projetada para fornecer uma experiência de usuário atraente e amigável, com transições suaves e elementos interativos.
 
-Acesse o site: 
-
-## Pré-requisitos ##
-Certifique-se de ter um navegador web moderno para visualizar e interagir adequadamente com a tela.
+Acesse o site: https://arthurgomes1k.github.io/modern-animated-login-register/
 
 ## Instruções de Uso ##
-1.Clone este repositório em sua máquina local.
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+1. Clone este repositório em sua máquina local. git clone https://github.com/arthurgomes1k/modern-animated-login-register.git
 
-2.Abra o arquivo index.html em seu navegador.
+2. Abra o arquivo index.html em seu navegador.
 
-3.Explore as funcionalidades de login e registro.
+3. Explore as funcionalidades de login e registro.
 
 ## Demonstração ##
 
+<img src="imagens/gif-login-app.gif" alt="Gif-login-registro">
 
 ## Contribuição ##
 Sinta-se à vontade para usar, personalizar e adaptar o projeto conforme suas necessidades.
