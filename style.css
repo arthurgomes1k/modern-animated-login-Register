@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(backgorund-mountains.png) no-repeat center;
+    background: url(imagens/backgorund-mountains.png) no-repeat center;
     background-size: cover;
     min-height: 100vh;
     display: flex;
