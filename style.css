@@ -218,3 +218,32 @@ body {
 .container.container .left {
     transform: translateX(0);
 }
+
+footer {
+    position: absolute;
+    top: 94.6%;
+    right: 0.6%;
+    transition: 0.2s ease;
+    background-color: rgba(227, 227, 227, 0.154);
+    backdrop-filter: blur(20px);
+    border-radius: 140px 140px 30px 30px;
+    box-shadow: 0 0 25px rgba(218, 214, 214, 0.185);
+    border: 1px solid rgba(208, 208, 208, 0.456);
+}
+
+footer p > a {
+    display: flex;
+    color: white;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+footer:hover {
+    top: 94.4%;
+    right: 0.7%;
+    box-shadow: 1px 1px 25px rgba(197, 192, 192, 0.356);
+}
